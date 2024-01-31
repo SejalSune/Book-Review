@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+</head>
+<body>
+    <h1 class="heading">Book Reviews <i class="fa-solid fa-book fa-beat"></i></h1>
+
+    <% for(post of posts){ %>
+        <div class="content">
+            <b><p>Book Name: <%=post.user%></p></b>
+            <p>Content: <%=post.content%></p>
+            <a href="http://localhost:3000/posts/<%=post.id%>/edit">Edit</a>&nbsp;
+            <a href="http://localhost:3000/posts/<%=post.id%>">Details</a>&nbsp;
+            
+            <form method="post" action="/posts/<%=post.id%>?_method=DELETE">
+                <button>Delete</button>
+            </form>
+        </div>
+    <% } %>
+    <button class="submit"><a href="http://localhost:3000/posts/new">Create new Post</a></button>
+</body>
+</html>

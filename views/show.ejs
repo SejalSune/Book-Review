@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new post</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <form action="/posts/:id" method="get">
+        <h1 class="heading">Post in Detail</h1>
+        <div class="content">
+            <p><b>Id: </b><%=post.id%></p>
+            <p><b>Book Name: </b><%=post.user%></p>
+            <p><b>Content: </b><%=post.content%></p>
+        </div>
+    </form>
+</body>
+</html>

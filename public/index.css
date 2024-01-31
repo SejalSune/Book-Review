@@ -1,0 +1,36 @@
+body {
+    background-color: #F5E6E8;
+}
+
+.heading{
+    color: #192A51;
+    text-align: center;
+}
+
+.content {
+    background-color: #D5C6E0;
+    padding: 4px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 0.3rem;
+    width: 99%;
+}
+
+button {
+    background-color: #F5E6E8;
+    border-radius: 0.5rem;
+    border: 1px solid #967AA1;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #192A51;
+}
+
+.submit {
+    background-color: #D5C6E0;
+    color: #192A51;
+}
+

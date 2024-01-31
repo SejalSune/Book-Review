@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new post</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <form action="/posts" method="post">
+        <h1 class="heading">New Post</h1>
+        <p><b>Id: </b><%=post.id%></p>
+        <b>Book Name:</b> <input name="user" type="text" placeholder="Write your Username"><br><br>
+        <b>Content:</b><br><textarea name="content" id="" cols="30" rows="10" placeholder="Write your Thoughts"></textarea><br><br>
+        <button class="submit">Submit</button>
+    </form>
+</body>
+</html>
